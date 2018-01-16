@@ -1,4 +1,38 @@
 #left-nav{
   width: 280px;
   background-color: $bg-left-nav;
+
+  header {
+    padding: 24px 22px 0 24px;
+  }
+
+  .header-avatar {
+    position: relative;
+    margin-right: 10px;
+  }
+
+  /* Header status icon */
+  .status-icon-header {
+    width: 10px;
+    height: 10px;
+    border: 2px solid $bg-left-nav;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    right: -3px;
+  }
+
+  .available {
+    background-color: $green-available;
+  }
+
+  .header-username {
+    color: $pure-white;
+    font-size: 0.9rem;
+  }
+
+  .header-status-text {
+    color: $pure-white;
+    font-size: 10px
+  }
 }
