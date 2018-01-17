@@ -152,6 +152,7 @@ body {
         }
 
         .list-icon {
+          transition: all .1s ease-in-out;
           width: 36px;
           height: 36px;
           border-radius: 2px;
@@ -169,6 +170,7 @@ body {
           }
 
           .icon-badge {
+            transition: all .1s ease-in-out;
             width: 15px;
             height: 15px;
             border: 2px solid $bg-left-nav;
