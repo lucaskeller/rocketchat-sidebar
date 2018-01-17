@@ -96,8 +96,8 @@
 
     .list-item {
 
-      margin: 6px 0;
-      padding: 6px 0;
+      padding: 8px 0;
+      color: $unselected-item;
 
       .list-item-gutter {
         padding: 0 24px;
@@ -108,6 +108,7 @@
           border-radius: 3px;
           position: relative;
           text-align: center;
+          color: $pure-white;
 
           span {
             margin: 0 auto;
@@ -128,7 +129,6 @@
         }
         
         .list-item-description {
-          color: $pure-white;
           margin-left: 10px;
           margin-right: 25px;
 
@@ -150,7 +150,7 @@
           text-align: right;
 
           .last-message-time {
-            font-size: 8px;
+            font-size: 9px;
             color: $last-message;
           }
 
@@ -158,7 +158,7 @@
             width: 20px;
             height: 20px;
             background-color: $counter-new-messages-bg;
-            font-size: 8px;
+            font-size: 10px;
             border-radius: 3px;
 
             span {
@@ -167,6 +167,17 @@
           }
         }
       }
+    }
+  }
+
+  .item-selected {
+    background-color: $item-selected-bg;
+  }
+
+  .item-new-message {
+    
+    .list-item-description {
+      color: $pure-white;
     }
   }
 
