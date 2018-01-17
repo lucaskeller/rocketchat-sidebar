@@ -91,6 +91,10 @@ body {
           i {
             margin: 0 auto
           }
+
+          &:hover {
+            text-decoration: unset;
+          }
         }
       }
     }
@@ -139,6 +143,10 @@ body {
         margin: 0 auto;
       }
     }
+  }
+
+  .channel-list-header {
+    padding-top: 24px;
   }
 
 
