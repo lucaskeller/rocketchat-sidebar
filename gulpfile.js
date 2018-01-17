@@ -54,7 +54,7 @@ gulp.task('scripts', function() {
     //this is where our dev JS scripts are
     return gulp.src(['node_modules/tether/dist/js/tether.min.js', 
                       'node_modules/jquery/dist/jquery.min.js', 
-                      'node_modules/bootstrap/dist/js/bootstrap.min.js', 
+                      'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js', 
                       'app/scripts/src/_includes/**/*.js', 
                       'app/scripts/src/**/*.js'])
                 //prevent pipe breaking caused by errors from gulp plugins
@@ -74,7 +74,7 @@ gulp.task('scripts-deploy', function() {
     //this is where our dev JS scripts are
     return gulp.src(['node_modules/tether/dist/js/tether.min.js',
                       'node_modules/jquery/dist/jquery.min.js', 
-                      'node_modules/bootstrap/dist/js/bootstrap.min.js', 
+                      'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js', 
                       'app/scripts/src/_includes/**/*.js', 
                       'app/scripts/src/**/*.js'])
                 //prevent pipe breaking caused by errors from gulp plugins

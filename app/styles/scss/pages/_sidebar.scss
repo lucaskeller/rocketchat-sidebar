@@ -53,9 +53,29 @@ body {
       margin-left: auto;
       font-size: 25px;
     }
+
+    .dropdown-toggle::after {
+      display: none;
+    }
   
     .secondary-menu-header {
       margin-top: 26px;
+
+      .dropdown-menu-sizes {
+
+        transform: translate3d(64px, 125px, 0px) !important;
+        top: 5px !important;
+
+        .dropdown-item {
+          color: $menu-unselected-item;
+          border-bottom: 1px solid $menu-item-border;
+          font-size: 14px;
+
+          &:hover {
+            color: $menu-selected-item;
+          }
+        }
+      }
   
       .secondary-menu-item-header {
         width: 36px;
