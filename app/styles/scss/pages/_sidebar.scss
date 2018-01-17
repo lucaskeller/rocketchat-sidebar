@@ -70,11 +70,11 @@
 
   .list-header {
 
-    padding: 24px;
+    padding: 24px 24px 18px 24px;
 
     .list-header-title {
       color: $list-header-title;
-      font-size: 11px;
+      font-size: 12px;
     }
 
     .list-header-counter {
@@ -82,7 +82,7 @@
       height: 20px;
       background-color: $list-header-counter-bg;
       color: $list-header-counter;
-      font-size: 7px;
+      font-size: 10px;
       border-radius: 3px;
       
       span {
@@ -91,6 +91,84 @@
     }
   }
 
+
+  .list {
+
+    .list-item {
+
+      margin: 6px 0;
+      padding: 6px 0;
+
+      .list-item-gutter {
+        padding: 0 24px;
+
+        .list-icon {
+          width: 36px;
+          height: 36px;
+          border-radius: 3px;
+          position: relative;
+          text-align: center;
+
+          span {
+            margin: 0 auto;
+          }
+
+          .icon-badge {
+            width: 15px;
+            height: 15px;
+            border: 2px solid $bg-left-nav;
+            border-radius: 50%;
+            position: absolute;
+            top: 5px;
+            right: -9px;
+            font-size: 8px;
+            color: #FFFFFF;
+            background-color: $bg-left-nav;
+          }
+        }
+        
+        .list-item-description {
+          color: $pure-white;
+          margin-left: 10px;
+          margin-right: 25px;
+
+          .description {
+            font-size: 0.9rem;
+          }
+
+          .last-msg {
+            font-size: 10px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 141px;
+          }
+        }
+
+        .list-item-counter {
+          color: $pure-white;
+          text-align: right;
+
+          .last-message-time {
+            font-size: 8px;
+            color: $last-message;
+          }
+
+          .counter {
+            width: 20px;
+            height: 20px;
+            background-color: $counter-new-messages-bg;
+            font-size: 8px;
+            border-radius: 3px;
+
+            span {
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+    }
+  }
 
   .channel-list {
 
