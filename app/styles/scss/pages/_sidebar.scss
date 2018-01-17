@@ -148,6 +148,11 @@ body {
 
       padding: 8px 0;
       color: $unselected-item;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $item-selected-bg;
+      }
 
       .list-item-gutter {
         padding: 0 24px;

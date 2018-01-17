@@ -830,4 +830,9 @@ $(document).ready(function() {
         break;
     }
   });
+
+  $('.list-item').click(function() {
+    $('.list-item').removeClass('item-selected');
+    $(this).addClass('item-selected');
+  });
 });
