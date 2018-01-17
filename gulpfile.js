@@ -90,7 +90,10 @@ gulp.task('scripts-deploy', function() {
 //compiling our SCSS files
 gulp.task('styles', function() {
     //the initializer / master SCSS file, which will just be a file that imports everything
-    return gulp.src(['node_modules/tether/dist/css/tether.min.css', 'node_modules/bootstrap/scss/bootstrap.scss', 'app/styles/scss/init.scss'])
+    return gulp.src(['node_modules/font-awesome/css/font-awesome.min.css', 
+                      'node_modules/tether/dist/css/tether.min.css', 
+                      'node_modules/bootstrap/scss/bootstrap.scss', 
+                      'app/styles/scss/init.scss'])
                 //prevent pipe breaking caused by errors from gulp plugins
                 .pipe(plumber({
                   errorHandler: function (err) {
@@ -121,6 +124,11 @@ gulp.task('styles', function() {
                 .pipe(gulp.dest('app/styles'))
                 //notify browserSync to refresh
                 .pipe(browserSync.reload({stream: true}));
+});
+
+gulp.task('fonts', function() {
+  return gulp.src(['node_modules/font-awesome/fonts/fontawesome-webfont.*'])
+          .pipe(gulp.dest('app/fonts/'));
 });
 
 //compiling our SCSS files for deployment
@@ -169,7 +177,8 @@ gulp.task('html-deploy', function() {
         .pipe(plumber())
         .pipe(gulp.dest('dist'));
 
-    gulp.src('app/fonts/**/*')
+    gulp.src(['node_modules/font-awesome/fonts/fontawesome-webfont.*',
+                'app/fonts/**/*'])
         //prevent pipe breaking caused by errors from gulp plugins
         .pipe(plumber())
         .pipe(gulp.dest('dist/fonts'));
@@ -206,7 +215,7 @@ gulp.task('scaffold', function() {
 //  startup the web server,
 //  start up browserSync
 //  compress all scripts and SCSS files
-gulp.task('default', ['browserSync', 'scripts', 'styles'], function() {
+gulp.task('default', ['browserSync', 'scripts', 'styles', 'fonts'], function() {
     //a list of watchers, so it will watch all of the following files waiting for changes
     gulp.watch('app/scripts/src/**', ['scripts']);
     gulp.watch('app/styles/scss/**', ['styles']);

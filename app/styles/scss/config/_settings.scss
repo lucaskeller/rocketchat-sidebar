@@ -4,13 +4,12 @@
 $pure-white: #FFFFFF;
 $bg-left-nav: #2F343D;
 $green-available: #2DE0A5;
+$bg-btn-header-menu: #1F2329;
 
 // no gutters 
 .no-gutters {
   margin-right: 0;
   margin-left: 0;
-  padding-right: 0;
-  padding-left: 0;
 
   > .col,
   > [class*="col-"] {
@@ -18,3 +17,13 @@ $green-available: #2DE0A5;
     padding-left: 0;
   }
 }
+
+$grid-columns:               12 !default;
+$grid-gutter-width-base:     0px !default;
+$grid-gutter-widths: (
+  xs: $grid-gutter-width-base,
+  sm: $grid-gutter-width-base,
+  md: $grid-gutter-width-base,
+  lg: $grid-gutter-width-base,
+  xl: $grid-gutter-width-base
+) !default;
