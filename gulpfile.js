@@ -134,7 +134,10 @@ gulp.task('fonts', function() {
 //compiling our SCSS files for deployment
 gulp.task('styles-deploy', function() {
     //the initializer / master SCSS file, which will just be a file that imports everything
-    return gulp.src(['node_modules/tether/dist/css/tether.min.css', 'node_modules/bootstrap/scss/bootstrap.scss', 'app/styles/scss/init.scss'])
+    return gulp.src(['node_modules/font-awesome/css/font-awesome.min.css',
+                      'node_modules/tether/dist/css/tether.min.css', 
+                      'node_modules/bootstrap/scss/bootstrap.scss', 
+                      'app/styles/scss/init.scss'])
                 .pipe(plumber())
                 //include SCSS includes folder
                 .pipe(sass({
