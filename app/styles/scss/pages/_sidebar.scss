@@ -102,6 +102,11 @@
       .list-item-gutter {
         padding: 0 24px;
 
+        .list-item-next-icon-container {
+          margin-left: 10px;
+          width: 80%;
+        }
+
         .list-icon {
           width: 36px;
           height: 36px;
@@ -128,13 +133,23 @@
           }
         }
         
-        .list-item-description {
-          margin-left: 10px;
-          margin-right: 25px;
+        .channel-name-lastmsg-time {
+
+          width: 100%;
 
           .description {
             font-size: 0.9rem;
+            line-height: 12px;
           }
+
+          .last-message-time {
+            font-size: 9px;
+            color: $last-message;
+          }
+        }
+
+        .list-item-description-msgcounter {
+          width: 100%;
 
           .last-msg {
             font-size: 10px;
@@ -142,16 +157,7 @@
             overflow: hidden;
             text-overflow: ellipsis;
             width: 141px;
-          }
-        }
-
-        .list-item-counter {
-          color: $pure-white;
-          text-align: right;
-
-          .last-message-time {
-            font-size: 9px;
-            color: $last-message;
+            float: left;
           }
 
           .counter {
@@ -175,8 +181,10 @@
   }
 
   .item-new-message {
-    
-    .list-item-description {
+
+    .description,
+    .last-msg,
+    .counter {
       color: $pure-white;
     }
   }
