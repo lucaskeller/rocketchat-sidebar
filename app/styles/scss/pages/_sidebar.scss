@@ -4,67 +4,95 @@
 
   header {
     padding: 24px 22px 0 24px;
-  }
 
-  .avatar-header {
-    position: relative;
-    margin-right: 10px;
-    width: 36px;
-    height: 36px;
-
-    img {
-      border-radius: 3px;
-    }
-  }
-
-  /* Header status icon */
-  .status-icon-header {
-    width: 10px;
-    height: 10px;
-    border: 2px solid $bg-left-nav;
-    border-radius: 50%;
-    position: absolute;
-    top: 5px;
-    right: -5px;
-  }
-
-  .available {
-    background-color: $green-available;
-  }
-
-  .header-username {
-    color: $pure-white;
-    font-size: 0.9rem;
-  }
-
-  .header-status-text {
-    color: $pure-white;
-    font-size: 10px
-  }
-
-  .menu-header {
-    color: $pure-white;
-    margin-left: auto;
-  }
-
-  .secondary-menu-header {
-    margin-top: 26px;
-
-    .secondary-menu-item-header {
+    .avatar-header {
+      position: relative;
+      margin-right: 10px;
       width: 36px;
-      height: 38px;
-      background-color: $bg-btn-header-menu;
-      border-radius: 2px;
+      height: 36px;
   
-      a {
-        color: $pure-white;
-        width: 100%;
-        height: 100%;
+      img {
+        border-radius: 3px;
+      }
+    }
   
-        i {
-          margin: 0 auto
+    /* Header status icon */
+    .status-icon-header {
+      width: 10px;
+      height: 10px;
+      border: 2px solid $bg-left-nav;
+      border-radius: 50%;
+      position: absolute;
+      top: 5px;
+      right: -5px;
+    }
+  
+    .available {
+      background-color: $green-available;
+    }
+  
+    .header-username {
+      color: $pure-white;
+      font-size: 0.9rem;
+    }
+  
+    .header-status-text {
+      color: $pure-white;
+      font-size: 10px
+    }
+  
+    .menu-header {
+      color: $pure-white;
+      margin-left: auto;
+    }
+  
+    .secondary-menu-header {
+      margin-top: 26px;
+  
+      .secondary-menu-item-header {
+        width: 36px;
+        height: 38px;
+        background-color: $bg-btn-header-menu;
+        border-radius: 2px;
+    
+        a {
+          color: $pure-white;
+          width: 100%;
+          height: 100%;
+    
+          i {
+            margin: 0 auto
+          }
         }
       }
     }
+  }
+
+  .list-header {
+
+    padding: 24px;
+
+    .list-header-title {
+      color: $list-header-title;
+      font-size: 11px;
+    }
+
+    .list-header-counter {
+      width: 20px;
+      height: 20px;
+      background-color: $list-header-counter-bg;
+      color: $list-header-counter;
+      font-size: 7px;
+      border-radius: 3px;
+      
+      span {
+        margin: 0 auto;
+      }
+    }
+  }
+
+
+  .channel-list {
+
   }
 }
